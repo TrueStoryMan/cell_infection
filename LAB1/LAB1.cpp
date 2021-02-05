@@ -100,7 +100,7 @@ void Draw(int x, int y, struct Info* arr[]) { //виводить матрицю 
                 cout << arr[i][j].Graphics << " ";
             }
             else {
-                SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 9)); //
+                SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 9)); //синій колір
                 cout << arr[i][j].Graphics << " ";
             }
         }
@@ -130,9 +130,7 @@ int main() {
     Info** arr = new Info * [x]; //створення двовимірного динамічного масиву структур
     for (int i = 0; i < x; i++)
         arr[i] = new Info[y];
-    
-    
-    //SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 4));
+
     for (int i = 0; i < x; i++) { //заповнення "здоровими клітинами"
         for (int j = 0; j < y; j++) {
             arr[i][j].Graphics = 'H';
