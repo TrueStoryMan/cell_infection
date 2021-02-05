@@ -100,7 +100,7 @@ void Draw(int x, int y, struct Info* arr[]) { //виводить матрицю 
                 cout << arr[i][j].Graphics << " ";
             }
             else {
-                SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 9)); //
+                SetConsoleTextAttribute(hConsole, (WORD)((0 << 4) | 9)); //синій колір
                 cout << arr[i][j].Graphics << " ";
             }
         }
